@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/line_chart_item"
+        android:icon="@drawable/ic_favorite_white_24dp"
+        android:title="MLines" />
+
+    <item
+        android:id="@+id/realtime_item"
+        android:icon="@drawable/ic_update_white_24dp"
+        android:title="RealTime" />
+
+    <item
+        android:id="@+id/piechart_item"
+        android:icon="@drawable/ic_favorite_white_24dp"
+        android:title="Pie" />
+    <item
+        android:id="@+id/bar_chart_item"
+        android:icon="@drawable/ic_local_dining_white_24dp"
+        android:title="Bar" />
+
+    <item
+        android:id="@+id/radar_item"
+        android:icon="@drawable/ic_favorite_white_24dp"
+        android:title="Radar" />
+
+    <item
+        android:id="@+id/line_item"
+        android:icon="@drawable/ic_update_white_24dp"
+        android:title="Line" />-->
+</menu>

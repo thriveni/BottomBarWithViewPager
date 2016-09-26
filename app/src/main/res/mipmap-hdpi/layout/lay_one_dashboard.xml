@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:background="#CFD8DC"
+        android:orientation="vertical">
+
+        <!--  android:background="#CFD8DC"-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/dp_10"
+            android:gravity="center"
+            android:text="Odometer(KM)"
+            android:textColor="#727272"
+            android:textSize="@dimen/sp_20"
+            android:fontFamily="fonts/Roboto-Light_1.ttf"/>
+        <LinearLayout
+            android:id="@+id/lay_odometer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:id="@+id/lay_odomater_last_month"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="30"
+                android:padding="@dimen/dp_15"
+                android:gravity="center"
+                android:background="#f0f0f0"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_odometer_last_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_8"
+                    android:text="900"
+                    android:textColor="#727272"
+                    android:textSize="@dimen/sp_30"
+                    android:fontFamily="fonts/Roboto-Light_1.ttf" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Last Month"
+                    android:textColor="#727272"
+                    android:textSize="@dimen/sp_15"
+                    android:fontFamily="fonts/Roboto-Light_1.ttf" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_odomater_total"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="40"
+                android:paddingTop="@dimen/dp_15"
+                android:paddingBottom="@dimen/dp_15"
+                android:gravity="center"
+                android:background="#FFFFFF"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_odometer_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_8"
+                    android:text="32434"
+                    android:textColor="#424242"
+                    android:textSize="@dimen/sp_30"
+                    android:fontFamily="fonts/Roboto-Light_1.ttf" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Total"
+                    android:textColor="#727272"
+                    android:textSize="@dimen/sp_15"
+                    android:fontFamily="fonts/Roboto-Light_1.ttf"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_odomater_this_month"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:paddingTop="@dimen/dp_15"
+                android:paddingBottom="@dimen/dp_15"
+                android:layout_weight="30"
+                android:background="#f0f0f0"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_odometer_this_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp_5n"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_8"
+                    android:text="454"
+                    android:textColor="#727272"
+                    android:textSize="@dimen/sp_30"
+                    android:fontFamily="fonts/Roboto-Light_1.ttf" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="This Month"
+                    android:textColor="#727272"
+                    android:textSize="@dimen/sp_15"
+                    android:fontFamily="fonts/Roboto-Light_1.ttf" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/dp_10"
+            android:layout_margin="@dimen/dp_5"
+            android:gravity="center"
+            android:text="Mileage (KM /Ltr)"
+            android:textColor="#727272"
+            android:textSize="@dimen/sp_20"
+            android:fontFamily="fonts/Roboto-Light_1.ttf" />
+
+        <LinearLayout
+            android:id="@+id/lay_mileage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:id="@+id/lay_mileage_last_month"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="30"
+                android:paddingTop="@dimen/dp_15"
+                android:paddingBottom="@dimen/dp_15"
+                android:gravity="center"
+                android:background="#f0f0f0"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_mileage_last_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_8"
+                    android:text="456"
+                    android:textColor="#727272"
+                    android:textSize="@dimen/sp_30"
+                    android:fontFamily="fonts/Roboto-Light_1.ttf" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Last Month"
+                    android:textColor="#727272"
+                    android:textSize="@dimen/sp_15"
+                    android:fontFamily="fonts/Roboto-Light_1.ttf" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_mileage_total"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="40"
+                android:paddingTop="@dimen/dp_15"
+                android:paddingBottom="@dimen/dp_15"
+                android:gravity="center"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_mileage_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_8"
+                    android:text="56756"
+                    android:textColor="#424242"
+                    android:textSize="@dimen/sp_30"
+                    android:fontFamily="fonts/Roboto-Light_1.ttf" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Overall"
+                    android:textColor="#727272"
+                    android:textSize="@dimen/sp_15"
+                    android:fontFamily="fonts/Roboto-Light_1.ttf" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_mileage_this_month"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="30"
+                android:paddingTop="@dimen/dp_15"
+                android:paddingBottom="@dimen/dp_15"
+                android:background="#f0f0f0"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_mileage_this_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp_5n"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_8"
+                    android:text="5466"
+                    android:textColor="#727272"
+                    android:textSize="@dimen/sp_30"
+                    android:fontFamily="fonts/Roboto-Light_1.ttf" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="This Month"
+                    android:textColor="#727272"
+                    android:textSize="@dimen/sp_15"
+                    android:fontFamily="fonts/Roboto-Light_1.ttf" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/dp_10"
+            android:layout_margin="@dimen/dp_5"
+            android:gravity="center"
+            android:text="Expenses(Rs)"
+            android:textColor="#727272"
+            android:textSize="@dimen/sp_20"
+            android:fontFamily="fonts/Roboto-Light_1.ttf" />
+
+        <LinearLayout
+            android:id="@+id/lay_expenses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dp_15"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:id="@+id/lay_expenses_last_month"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="30"
+                android:background="#f0f0f0"
+                android:gravity="center"
+                android:padding="@dimen/dp_15"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_expenses_last_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_8"
+                    android:text="678"
+                    android:textColor="#727272"
+                    android:textSize="@dimen/sp_30"
+                    android:fontFamily="fonts/Roboto-Light_1.ttf" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Last Month"
+                    android:textColor="#727272"
+                    android:textSize="@dimen/sp_15"
+                    android:fontFamily="fonts/Roboto-Light_1.ttf"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_expenses_total"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="40"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:paddingTop="@dimen/dp_15"
+                android:paddingBottom="@dimen/dp_15"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_expenses_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp_5n"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_8"
+                    android:text="32434"
+                    android:textColor="#424242"
+                    android:textSize="@dimen/sp_30"
+                    android:fontFamily="fonts/Roboto-Light_1.ttf"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Total"
+                    android:textColor="#727272"
+                    android:textSize="@dimen/sp_15"
+                    android:fontFamily="fonts/Roboto-Light_1.ttf" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_expenses_this_month"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="30"
+                android:background="#f0f0f0"
+                android:paddingTop="@dimen/dp_15"
+                android:paddingBottom="@dimen/dp_15"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_expenses_this_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_8"
+                    android:text="9789"
+                    android:textColor="#727272"
+                    android:textSize="@dimen/sp_30"
+                    android:fontFamily="fonts/Roboto-Light_1.ttf" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="This Month"
+                    android:textColor="#727272"
+                    android:textSize="@dimen/sp_15"
+                    android:fontFamily="fonts/Roboto-Light_1.ttf"
+                   />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

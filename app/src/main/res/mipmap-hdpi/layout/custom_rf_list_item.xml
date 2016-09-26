@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        app:cardCornerRadius="@dimen/dp_5"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@mipmap/avatar_slide"
+                android:layout_weight="20"
+                android:id="@+id/img_claim" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="80"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:weightSum="100"
+                    android:layout_height="wrap_content">
+
+                    <in.intellicar.android.connectedvehicle.utilities.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:text="Rs"
+                        android:padding="@dimen/dp_2"
+                        />
+
+                    <in.intellicar.android.connectedvehicle.utilities.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
+                        android:gravity="left"
+                        android:text="5000"
+                        android:id="@+id/tv_refuel_amount" />
+
+                    <in.intellicar.android.connectedvehicle.utilities.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
+                        android:gravity="right"
+                        android:text="5000"
+                        android:id="@+id/tv_refuel_date" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:weightSum="100"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+
+                    <in.intellicar.android.connectedvehicle.utilities.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="24.6"
+                        android:layout_weight="10"
+                        android:padding="@dimen/dp_2"
+                        android:id="@+id/tv_refuel_ltr_total" />
+
+                    <in.intellicar.android.connectedvehicle.utilities.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:text="Ltr @Rs"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        />
+                    <in.intellicar.android.connectedvehicle.utilities.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:text="70"
+                        android:layout_gravity="left"
+                        android:gravity="center"
+                        android:id="@+id/tv_refuel_per_ltr" />
+                    <in.intellicar.android.connectedvehicle.utilities.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:text="/Ltr"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:id="@+id/textView2" />
+
+                    <in.intellicar.android.connectedvehicle.utilities.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="40"
+                        android:text="Odometer :"
+                        android:layout_gravity="center"
+                        android:gravity="right"
+                        />
+                    <in.intellicar.android.connectedvehicle.utilities.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20"
+                        android:text="50000"
+                        android:layout_gravity="center"
+                        android:gravity="left"
+                        android:id="@+id/tv_refuel_odometer" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/intellicar_theme_color"
+       >
+
+    <ImageView
+        android:id="@+id/menu_search_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:layout_marginRight="5dp"
+        android:padding="10dp"
+        android:src="@mipmap/search_x" />
+
+
+    <in.intellicar.android.connectedvehicle.utilities.CustomTextView
+        android:id="@+id/titleTextNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#fff"
+        android:text="Title"
+        android:textSize="@dimen/txt_25"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/slide_left_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:padding="10dp"
+        android:src="@mipmap/handbar_x" />
+
+</RelativeLayout>

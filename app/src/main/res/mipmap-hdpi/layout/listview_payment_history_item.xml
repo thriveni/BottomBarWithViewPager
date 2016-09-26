@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="@dimen/dp_5"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <in.intellicar.android.connectedvehicle.utilities.CustomTextView
+            android:id="@+id/tv_date_loan_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:padding="@dimen/dp_2"
+            android:text="23-4-16" />
+
+        <in.intellicar.android.connectedvehicle.utilities.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:text="EMI: #" />
+
+        <in.intellicar.android.connectedvehicle.utilities.CustomTextView
+            android:id="@+id/tv_emi_loan_item"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:text="6" />
+
+        <in.intellicar.android.connectedvehicle.utilities.CustomTextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:text="ECS" />
+
+        <in.intellicar.android.connectedvehicle.utilities.CustomTextView
+            android:id="@+id/tv_ecs_amount_loan_item"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="20"
+            android:gravity="center"
+            android:text="12000" />
+
+        <in.intellicar.android.connectedvehicle.utilities.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="10"
+            android:gravity="left"
+            android:text="OK" />
+    </LinearLayout>
+
+</LinearLayout>

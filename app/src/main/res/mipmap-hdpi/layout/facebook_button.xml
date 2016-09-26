@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fb="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/landing_facebook_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/landing_facebook_login_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#2A50A5"
+        android:textColor="#FFFFFF"
+        android:visibility="gone"
+        fb:com_facebook_login_text="Facebook Login"
+        fb:com_facebook_logout_text="Facebook Logout" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/facebook_button"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.1"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:text="f"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#123456" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.9"
+            android:paddingBottom="5dp"
+            android:paddingLeft="47dp"
+            android:paddingRight="47dp"
+            android:paddingTop="5dp"
+            android:text="Facebook Login"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:padding="@dimen/dp_15"
+    android:layout_height="match_parent">
+
+
+    <in.intellicar.android.connectedvehicle.utilities.CustomTextView
+        android:id="@+id/tv_new_claim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="New Claim"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:background="@drawable/button_login"
+        android:transitionName="@string/activity_text_trans"
+        />
+
+    <in.intellicar.android.connectedvehicle.utilities.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_gravity="left"
+        android:text="Claim History"
+        android:textColor="@color/black"
+        android:layout_margin="@dimen/dp_10"
+        android:textSize="@dimen/sp_15"
+        />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        app:cardCornerRadius="@dimen/dp_5"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/lv_claim"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

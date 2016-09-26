@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/car_img"
+    android:clickable="true">
+    <LinearLayout
+        android:id="@+id/vGlobalMenuHeader"
+        android:layout_marginTop="40dp"
+        android:padding="@dimen/dp_10"
+        android:layout_gravity="center"
+        android:gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_proflpic_slidemenu"
+            android:layout_width="@dimen/global_menu_avatar_size"
+            android:layout_height="@dimen/global_menu_avatar_size"
+            android:scaleType="centerCrop"
+            android:textColor="@color/colorPrimary"
+            app:civ_border_width="@dimen/dp_2"
+            android:background="@drawable/ic_friends"
+            android:layout_marginTop="@dimen/dp_15" />
+
+        <LinearLayout
+            android:id="@+id/lay_drop_down"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_gravity="left"
+            android:weightSum="100"
+            android:gravity="center_horizontal"
+            android:layout_height="match_parent">
+
+            <TextView
+
+                android:id="@+id/tv_lastname_slidemenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="34"
+                android:gravity="left"
+                android:maxLength="7"
+                android:text="Jhon"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/sp_20"
+              />
+
+            <TextView
+                android:id="@+id/tv_firstname_slidemenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_weight="65"
+                android:text="Gellenhall"
+                android:maxLength="15"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/sp_20"
+               />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

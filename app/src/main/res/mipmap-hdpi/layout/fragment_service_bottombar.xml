@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myCoordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/lay_vw_service"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <!--    <android.support.design.widget.TabLayout
+                android:id="@+id/acFragmentTabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="?attr/colorPrimary"
+                android:backgroundTint="@color/PrimaryColor"
+                android:elevation="6dp"
+                android:minHeight="?attr/actionBarSize" />-->
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vwpager_service"
+            android:layout_width="fill_parent"
+            android:background="#456546"
+            android:layout_height="wrap_content"
+            >
+        </android.support.v4.view.ViewPager>
+
+        <FrameLayout
+            android:id="@+id/frameFragment_service"
+            android:background="#797979"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sunny_day_car"
+    android:clickable="true">
+    <LinearLayout
+        android:id="@+id/vGlobalMenuHeader"
+        android:layout_marginTop="20dp"
+        android:padding="@dimen/dp_10"
+        android:layout_gravity="center"
+        android:gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_proflpic_slidemenu"
+            android:layout_width="@dimen/global_menu_avatar_size"
+            android:layout_height="@dimen/global_menu_avatar_size"
+            android:scaleType="centerCrop"
+            android:textColor="@color/intellicar_theme_color"
+            app:civ_border_width="@dimen/dp_2"
+            android:background="@mipmap/avatar_slide"
+            android:layout_marginTop="@dimen/dp_15" />
+
+        <LinearLayout
+            android:id="@+id/lay_drop_down"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_gravity="left"
+            android:weightSum="100"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"
+            android:theme="@style/MyButton"
+            android:gravity="center_horizontal"
+            android:layout_height="match_parent">
+
+            <in.intellicar.android.connectedvehicle.utilities.CustomTextView
+
+                android:id="@+id/tv_lastname_slidemenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="34"
+                android:gravity="left"
+                android:maxLength="7"
+                android:text="Suzuki"
+                android:textColor="@color/intellicar_theme_color"
+                android:textSize="@dimen/sp_20"
+              />
+
+            <in.intellicar.android.connectedvehicle.utilities.CustomTextView
+                android:id="@+id/tv_firstname_slidemenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_weight="65"
+                android:text="John"
+                android:maxLength="7"
+                android:textColor="@color/intellicar_theme_color"
+                android:textSize="@dimen/sp_20"
+               />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:src="@drawable/drop_down_arrow"
+                android:id="@+id/imageView" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

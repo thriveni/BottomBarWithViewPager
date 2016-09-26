@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#CFD8DC"
+        android:orientation="vertical"
+      >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="fonts/Roboto-Light_1.ttf"
+            android:gravity="left"
+            android:padding="@dimen/dp_10"
+            android:text="Score"
+            android:textColor="#727272"
+            android:textSize="@dimen/sp_20" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:weightSum="100"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:id="@+id/lay_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="30"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="3dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:id="@+id/lay_score_last_month"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="30"
+                        android:background="#f0f0f0"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="@dimen/dp_15">
+
+                        <TextView
+                            android:id="@+id/tv_score_last_month"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="fonts/Roboto-Light_1.ttf"
+                            android:gravity="center"
+                            android:text="900"
+                            android:textColor="#727272"
+                            android:textSize="@dimen/sp_30" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="fonts/Roboto-Light_1.ttf"
+                            android:gravity="center"
+                            android:text="Last Month"
+                            android:textColor="#727272"
+                            android:textSize="@dimen/sp_15" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="30"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="3dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:id="@+id/lay_score_total"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="30"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="@dimen/dp_10">
+
+                        <TextView
+                            android:id="@+id/tv_score_total"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="fonts/Roboto-Light_1.ttf"
+                            android:gravity="center"
+                            android:text="32434"
+                            android:textColor="#424242"
+                            android:textSize="@dimen/sp_30" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="fonts/Roboto-Light_1.ttf"
+                            android:gravity="center"
+                            android:text="Total"
+                            android:textColor="#727272"
+                            android:textSize="@dimen/sp_15" />
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="30"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="3dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:id="@+id/lay_score_this_month"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:layout_gravity="center"
+                        android:layout_weight="30"
+                        android:background="#f0f0f0"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                       >
+
+                        <TextView
+                            android:id="@+id/tv_score_this_month"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="fonts/Roboto-Light_1.ttf"
+                            android:gravity="center"
+                            android:text="454"
+                            android:textColor="#727272"
+                            android:textSize="@dimen/sp_30" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="fonts/Roboto-Light_1.ttf"
+                            android:gravity="center"
+                            android:text="This Month"
+                            android:textColor="#727272"
+                            android:textSize="@dimen/sp_15" />
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp_5"
+            android:fontFamily="fonts/Roboto-Light_1.ttf"
+            android:gravity="left"
+            android:padding="@dimen/dp_10"
+            android:text="Violations"
+            android:textColor="#727272"
+            android:textSize="@dimen/sp_20" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:weightSum="100"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:id="@+id/lay_violations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="30"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="3dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:id="@+id/lay_violations_last_month"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="30"
+                        android:background="#f0f0f0"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="@dimen/dp_15">
+
+                        <TextView
+                            android:id="@+id/tv_violations_last_month"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="fonts/Roboto-Light_1.ttf"
+                            android:gravity="center"
+                            android:text="900"
+                            android:textColor="#727272"
+                            android:textSize="@dimen/sp_30" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="fonts/Roboto-Light_1.ttf"
+                            android:gravity="center"
+                            android:text="Last Month"
+                            android:textColor="#727272"
+                            android:textSize="@dimen/sp_15" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="30"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="3dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:id="@+id/lay_violations_total"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="30"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="@dimen/dp_10">
+
+                        <TextView
+                            android:id="@+id/tv_violations_total"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="fonts/Roboto-Light_1.ttf"
+                            android:gravity="center"
+                            android:text="32434"
+                            android:textColor="#424242"
+                            android:textSize="@dimen/sp_30" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="fonts/Roboto-Light_1.ttf"
+                            android:gravity="center"
+                            android:text="Total"
+                            android:textColor="#727272"
+                            android:textSize="@dimen/sp_15" />
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="30"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="3dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:id="@+id/lay_violations_this_month"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="30"
+                        android:background="#f0f0f0"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="@dimen/dp_10">
+
+                        <TextView
+                            android:id="@+id/tv_violations_this_month"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="fonts/Roboto-Light_1.ttf"
+                            android:gravity="center"
+                            android:text="454"
+                            android:textColor="#727272"
+                            android:textSize="@dimen/sp_30" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="fonts/Roboto-Light_1.ttf"
+                            android:gravity="center"
+                            android:text="This Month"
+                            android:textColor="#727272"
+                            android:textSize="@dimen/sp_15" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</LinearLayout>

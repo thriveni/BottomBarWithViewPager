@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/customRowForFamilyMembersFragmentAdultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adult 1"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="13sp" />
+
+    <RadioGroup
+        android:id="@+id/customRowFamilyMemberFragmentRadioButtonGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/customRowFamilyMemberFragmentMorningRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Morning" />
+
+        <RadioButton
+            android:id="@+id/customRowFamilyMemberFragmentEveningRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Evening" />
+
+        <RadioButton
+            android:id="@+id/customRowFamilyMemberFragmentNaRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="NA" />
+    </RadioGroup>
+
+</LinearLayout>

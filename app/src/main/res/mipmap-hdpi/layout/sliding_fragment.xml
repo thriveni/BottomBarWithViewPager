@@ -1,0 +1,744 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    >
+    <!--  android:background="#BF613233"
+
+    android:background="@drawable/slide_menu_background"
+    android:background="@drawable/slide_menu_background"-->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView2" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/header_menu"
+                layout="@layout/slide_menu_header">
+            </include>
+<!--
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/header_menu"
+                android:layout_gravity="bottom"
+                android:background="@drawable/slide_menu_line" />-->
+
+
+            <LinearLayout
+                android:id="@+id/spinnerLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+
+                <!--<Spinner
+                    android:id="@+id/drawerSpinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />-->
+                <LinearLayout
+                    android:id="@+id/lay_carlist"
+                    android:layout_below="@+id/lay_dashboard"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:padding="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_height="@dimen/dp_30"
+                        android:background="@mipmap/notical_date" />
+
+                    <in.intellicar.android.connectedvehicle.utilities.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:padding="@dimen/dp_5"
+                        android:text="Vehicles"
+                        android:textColor="@color/intellicar_theme_color"
+                        android:textSize="@dimen/sp_13"
+                        android:layout_gravity="center"
+                        android:visibility="visible"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_add_vehicle"
+                    android:layout_below="@+id/lay_dashboard"
+                    android:orientation="horizontal"
+                    android:weightSum="100"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/dp_10"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:theme="@style/MyButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <in.intellicar.android.connectedvehicle.utilities.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="90"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:padding="@dimen/dp_5"
+                        android:text="Add Vehicle"
+                        android:textColor="@color/intellicar_theme_color"
+                        android:textSize="@dimen/sp_13"
+                        android:layout_gravity="center"
+                        android:visibility="visible"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_height="@dimen/dp_30"
+                        android:background="@mipmap/regprof_x" />
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/header_menu"
+                    android:layout_gravity="bottom"
+                    android:background="@color/intellicar_theme_color" />
+                <LinearLayout
+                    android:id="@+id/lay_devicelist"
+                    android:layout_below="@+id/lay_dashboard"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_height="@dimen/dp_30"
+                        android:background="@mipmap/disarm" />
+
+                    <in.intellicar.android.connectedvehicle.utilities.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:padding="@dimen/dp_5"
+                        android:text="Devices"
+                        android:textColor="@color/intellicar_theme_color"
+                        android:textSize="@dimen/sp_13"
+                        android:layout_gravity="center"
+                        android:visibility="visible"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_add_device"
+                    android:layout_below="@+id/lay_dashboard"
+                    android:orientation="horizontal"
+                    android:weightSum="100"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:theme="@style/MyButton"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <in.intellicar.android.connectedvehicle.utilities.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="90"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:padding="@dimen/dp_5"
+                        android:text="Add Device"
+                        android:textColor="@color/intellicar_theme_color"
+                        android:textSize="@dimen/sp_13"
+                        android:layout_gravity="center"
+                        android:visibility="visible"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_height="@dimen/dp_30"
+                        android:background="@mipmap/regprof_x" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/header_menu"
+                android:layout_gravity="bottom"
+                android:background="@color/intellicar_theme_color" />
+
+            <LinearLayout
+                android:id="@+id/lay_drwarer_item"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/lay_dashboard"
+                    android:layout_below="@+id/header_menu"
+                    android:orientation="horizontal"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:theme="@style/MyButton"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/dp_10"
+
+                    android:transitionName="@string/trans_dashboard"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_height="@dimen/dp_30"
+                        android:background="@mipmap/regpass_x" />
+
+                    <in.intellicar.android.connectedvehicle.utilities.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:padding="@dimen/dp_5"
+                        android:text="DashBoard"
+                        android:layout_gravity="center"
+                        android:textColor="@color/intellicar_theme_color"
+                        android:textSize="@dimen/sp_13"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/intellicar_theme_color" />
+
+                <LinearLayout
+                    android:id="@+id/lay_refuel_hitory"
+                    android:layout_below="@+id/lay_dashboard"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:padding="@dimen/dp_10"
+                    android:theme="@style/MyButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_height="@dimen/dp_30"
+                        android:background="@mipmap/regpass_x" />
+
+                    <in.intellicar.android.connectedvehicle.utilities.CustomTextView
+                        android:id="@+id/slideout_menu_notification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:padding="@dimen/dp_5"
+                        android:text="Refuelling History"
+                        android:textColor="@color/intellicar_theme_color"
+                        android:textSize="@dimen/sp_13"
+                        android:layout_gravity="center"
+                        android:visibility="visible"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_settings"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_10"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:layout_below="@+id/lay_refuel_hitory"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_height="@dimen/dp_30"
+                        android:background="@mipmap/settingleft_slidemenu" />
+
+
+                    <in.intellicar.android.connectedvehicle.utilities.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:padding="@dimen/dp_5"
+                        android:text="Settings"
+                        android:layout_gravity="center"
+                        android:textColor="#8C8C8C"
+                        android:textSize="@dimen/sp_10"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_expences"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/dp_10"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:theme="@style/MyButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_height="@dimen/dp_30"
+                        android:background="@mipmap/regpass_x" />
+
+                    <in.intellicar.android.connectedvehicle.utilities.CustomTextView
+                        android:id="@+id/tv_sm_expenses"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/dp_5"
+                        android:text="Expenses"
+                        android:textColor="@color/intellicar_theme_color"
+                        android:textSize="@dimen/sp_13"
+                        android:visibility="visible" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_reminders"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/dp_10"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:theme="@style/MyButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/img_remiders"
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_height="@dimen/dp_30"
+                        android:background="@mipmap/regpass_x" />
+
+                    <in.intellicar.android.connectedvehicle.utilities.CustomTextView
+                        android:id="@+id/tv_sld_reminders"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/dp_5"
+                        android:text="Reminders"
+                        android:textColor="@color/intellicar_theme_color"
+                        android:textSize="@dimen/sp_13"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_service_history"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/dp_10"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:theme="@style/MyButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_height="@dimen/dp_30"
+                        android:background="@mipmap/regpass_x" />
+
+                    <in.intellicar.android.connectedvehicle.utilities.CustomTextView
+                        android:id="@+id/tv_sld_service_history"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/dp_5"
+                        android:text="Service Histroy"
+                        android:textColor="@color/intellicar_theme_color"
+                        android:textSize="@dimen/sp_13"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/lay_expences"
+                    android:layout_gravity="bottom"
+                    android:background="@color/intellicar_theme_color" />
+
+                <LinearLayout
+                    android:id="@+id/lay_carhealth"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:theme="@style/MyButton"
+                    android:padding="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/img_carhealth"
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_height="@dimen/dp_30"
+                        android:background="@mipmap/regpass_x" />
+
+                    <in.intellicar.android.connectedvehicle.utilities.CustomTextView
+                        android:id="@+id/tv_sld_car_health"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/dp_5"
+                        android:text="Car Health"
+                        android:textColor="@color/intellicar_theme_color"
+                        android:textSize="@dimen/sp_13"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_drv_behaviour"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/dp_10"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:theme="@style/MyButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/img_drv_behaviour"
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_height="@dimen/dp_30"
+                        android:background="@mipmap/regpass_x" />
+
+                    <in.intellicar.android.connectedvehicle.utilities.CustomTextView
+                        android:id="@+id/tv_sld_driver_behaviour"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/dp_5"
+                        android:text="Driver Behavior"
+                        android:textColor="@color/intellicar_theme_color"
+                        android:textSize="@dimen/sp_13"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/lay_expences"
+                    android:layout_gravity="bottom"
+                    android:background="@color/intellicar_theme_color" />
+
+                <LinearLayout
+                    android:id="@+id/lay_trip_log"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/dp_10"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:theme="@style/MyButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/img_trip_log"
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_height="@dimen/dp_30"
+                        android:background="@mipmap/regpass_x" />
+
+                    <in.intellicar.android.connectedvehicle.utilities.CustomTextView
+                        android:id="@+id/tv_sld_trip_log"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/dp_5"
+                        android:text="Trip Log"
+                        android:textColor="@color/intellicar_theme_color"
+                        android:textSize="@dimen/sp_13"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_insurance"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/dp_10"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:theme="@style/MyButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/img_insurance"
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_height="@dimen/dp_30"
+                        android:background="@mipmap/regpass_x" />
+
+                    <in.intellicar.android.connectedvehicle.utilities.CustomTextView
+                        android:id="@+id/tv_sld_insurance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/dp_5"
+                        android:text="Insurance"
+                        android:textColor="@color/intellicar_theme_color"
+                        android:textSize="@dimen/sp_13"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_loans"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/dp_10"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:theme="@style/MyButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/img_loans"
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_height="@dimen/dp_30"
+                        android:background="@mipmap/regpass_x" />
+
+                    <in.intellicar.android.connectedvehicle.utilities.CustomTextView
+                        android:id="@+id/tv_sld_loans"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/dp_5"
+                        android:text="Loans"
+                        android:textColor="@color/intellicar_theme_color"
+                        android:textSize="@dimen/sp_13"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/lay_expences"
+                    android:layout_gravity="bottom"
+                    android:background="@color/intellicar_theme_color" />
+
+                <LinearLayout
+                    android:id="@+id/lay_rd_assist"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/dp_10"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:theme="@style/MyButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/img_rd_asst"
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_height="@dimen/dp_30"
+                        android:background="@mipmap/regpass_x" />
+
+                    <in.intellicar.android.connectedvehicle.utilities.CustomTextView
+                        android:id="@+id/tv_sld_roadsie_asst"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/dp_5"
+                        android:text="Roadside Assistance"
+                        android:textColor="@color/intellicar_theme_color"
+                        android:textSize="@dimen/sp_13"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_geofencing"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/dp_10"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:theme="@style/MyButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/img_geofencing"
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_height="@dimen/dp_30"
+                        android:background="@mipmap/regpass_x" />
+
+                    <in.intellicar.android.connectedvehicle.utilities.CustomTextView
+                        android:id="@+id/tv_sld_geofencing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/dp_5"
+                        android:text="Geofencing"
+                        android:textColor="@color/intellicar_theme_color"
+                        android:textSize="@dimen/sp_13"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_hst_rpt"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/dp_10"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:theme="@style/MyButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/img_hst_rpt"
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_height="@dimen/dp_30"
+                        android:background="@mipmap/regprof_x" />
+
+                    <in.intellicar.android.connectedvehicle.utilities.CustomTextView
+                        android:id="@+id/tv_sld_hst_rpt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/dp_5"
+                        android:text="Historical Reports"
+                        android:textColor="@color/intellicar_theme_color"
+                        android:textSize="@dimen/sp_13"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/lay_expences"
+                    android:layout_gravity="bottom"
+                    android:background="@color/intellicar_theme_color" />
+
+                <LinearLayout
+                    android:id="@+id/lay_sld_logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/dp_10"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:theme="@style/MyButton"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <in.intellicar.android.connectedvehicle.utilities.CustomTextView
+                        android:id="@+id/slidemenu_signout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Logout"
+                        android:textColor="@color/intellicar_theme_color"
+                        android:textSize="@dimen/sp_13"
+                        android:layout_gravity="center_vertical" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_height="@dimen/dp_30"
+                        android:background="@mipmap/arm_x" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

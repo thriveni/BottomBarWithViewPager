@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/intellicar_theme_color"
+    android:fitsSystemWindows="true"
+    android:minHeight="?attr/actionBarSize"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    android:paddingTop="@dimen/tool_bar_top_padding"
+    app:layout_scrollFlags="scroll|enterAlways">
+
+    <ImageView
+        android:id="@+id/img_slide_handburger"
+        style="@style/Widget.AppCompat.ActionButton"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="start"
+        android:src="@mipmap/handbar_x"
+        android:visibility="gone" />
+    />
+
+    <in.intellicar.android.connectedvehicle.utilities.CustomTextViewRobotoFont
+        android:id="@+id/tv_toobar_title"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#000000"
+        android:layout_height="?attr/actionBarSize"
+        android:textSize="@dimen/sp_15"
+        />
+
+    <ImageView
+        android:id="@+id/overflowmneu_toolbar"
+        style="@style/Widget.AppCompat.ActionButton"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="end"
+        android:src="@mipmap/handbar2_x"
+        android:visibility="gone" />
+
+</android.support.v7.widget.Toolbar>
